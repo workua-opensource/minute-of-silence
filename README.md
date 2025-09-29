@@ -24,12 +24,12 @@ min версія
 або через CDN
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/workua-opensource/minute-of-silence@v0.0.1/silence-moment.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/workua-opensource/minute-of-silence@v0.0.4/silence-moment.js"></script>
 ```
 
 min версія
 ```html
-<script src="https://cdn.jsdelivr.net/gh/workua-opensource/minute-of-silence@v0.0.1/silence-moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/workua-opensource/minute-of-silence@v0.0.4/silence-moment.min.js"></script>
 ```
 
 2. Ініціалізуйте плагін:

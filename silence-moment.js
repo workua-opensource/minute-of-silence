@@ -55,6 +55,52 @@
         }
     }
 
+    function isTimeZoneFunctionalForKyiv() {
+        const timeZones = ["Europe/Kyiv", "Europe/Kiev"];
+        try {
+            const testUtcMs = Date.UTC(2024, 0, 1, 12, 0, 0);
+            const opts = { hour: "2-digit", day: "2-digit", hourCycle: "h23" };
+
+            for (const tz of timeZones) {
+                try {
+                    const kyivParts = new Intl.DateTimeFormat("en-US", {
+                        timeZone: tz,
+                        ...opts,
+                    }).formatToParts(testUtcMs);
+
+                    const utcParts = new Intl.DateTimeFormat("en-US", {
+                        timeZone: "UTC",
+                        ...opts,
+                    }).formatToParts(testUtcMs);
+
+                    const getDayHour = (parts) => {
+                        let day = null, hour = null;
+                        for (const p of parts) {
+                            if (p.type === "day") day = p.value;
+                            if (p.type === "hour") hour = p.value;
+                        }
+                        return { day, hour };
+                    };
+
+                    const k = getDayHour(kyivParts);
+                    const u = getDayHour(utcParts);
+
+                    if (k.day && k.hour && u.day && u.hour) {
+                        if (!(k.day === u.day && k.hour === u.hour)) {
+                            return true;
+                        }
+                    }
+                } catch {
+                    continue;
+                }
+            }
+
+            return false;
+        } catch {
+            return false;
+        }
+    }
+
     function getKyivShowTime(hour, minute, second = 0) {
         const kyivNow = getKyivTime();
         const kyivShowTime = new Date(
@@ -595,6 +641,10 @@
     window.SilenceMoment = {
         init: function (userConfig = {}) {
             if (isInitialized) {
+                return;
+            }
+
+            if (!isTimeZoneFunctionalForKyiv()) {
                 return;
             }
 
