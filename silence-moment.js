@@ -501,7 +501,7 @@
                             }
                             ${
                                 !config.disableWorkLogo
-                                    ? `<a href="https://www.work.ua/" class="silence-moment-work-logo" target="_blank" rel="noopener" title="Work.ua. Сайт пошуку роботи №1 в Україні." aria-label="Перейти на Work.ua"><span class="sr-only">Work.ua</span></a>`
+                                    ? `<a href="https://www.work.ua/" class="silence-moment-work-logo" target="_blank" rel="noopener" title="Work.ua. Сервіс пошуку роботи №1 в Україні." aria-label="Перейти на Work.ua"><span class="sr-only">Work.ua</span></a>`
                                     : ""
                             }
                         </div>
