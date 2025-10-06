@@ -2,7 +2,7 @@
 
 Автономний JavaScript плагін для показу модального вікна хвилини мовчання о 09:00 за київським часом.
 
-<img width="1440" height="1009" alt="example" src="https://github.com/user-attachments/assets/df4aa14d-c273-4f8b-a3d8-2cba6996ce40" />
+<img width="1726" height="873" alt="example" src="https://github.com/user-attachments/assets/4556c1e2-8324-486f-b3d7-256a3a8cb7dc" />
 
 ## Опис
 
@@ -24,12 +24,12 @@ min версія
 або через CDN
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/workua-opensource/minute-of-silence@v0.0.5/silence-moment.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/workua-opensource/minute-of-silence@v0.0.6/silence-moment.js"></script>
 ```
 
 min версія
 ```html
-<script src="https://cdn.jsdelivr.net/gh/workua-opensource/minute-of-silence@v0.0.5/silence-moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/workua-opensource/minute-of-silence@v0.0.6/silence-moment.min.js"></script>
 ```
 
 2. Ініціалізуйте плагін:
