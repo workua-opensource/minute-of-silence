@@ -229,8 +229,43 @@
       "timestamp": "2026-08-29T00:00:00Z",
       "count": 0,
       "uniques": 0
+    },
+    {
+      "timestamp": "2026-08-30T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-08-31T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-01T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-02T00:00:00Z",
+      "count": 3,
+      "uniques": 2
+    },
+    {
+      "timestamp": "2026-09-03T00:00:00Z",
+      "count": 12,
+      "uniques": 2
+    },
+    {
+      "timestamp": "2026-09-04T00:00:00Z",
+      "count": 0,
+      "uniques": 0
+    },
+    {
+      "timestamp": "2026-09-05T00:00:00Z",
+      "count": 0,
+      "uniques": 0
     }
   ],
-  "total_count": 76,
-  "total_uniques_sum": 24
+  "total_count": 91,
+  "total_uniques_sum": 28
 }
